@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balloons", "Balloons\Balloons.csproj", "{EB3CDB39-9F32-4731-B671-5881B7C35D11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Balloons.Examples", "Balloons.Examples\Balloons.Examples.csproj", "{2140E72A-B733-4B84-91E2-8F578C098C3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3CDB39-9F32-4731-B671-5881B7C35D11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3CDB39-9F32-4731-B671-5881B7C35D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3CDB39-9F32-4731-B671-5881B7C35D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3CDB39-9F32-4731-B671-5881B7C35D11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2140E72A-B733-4B84-91E2-8F578C098C3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2140E72A-B733-4B84-91E2-8F578C098C3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2140E72A-B733-4B84-91E2-8F578C098C3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2140E72A-B733-4B84-91E2-8F578C098C3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.csprojResolveAssemblyReference.cache
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\App.g.cs
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples_MarkupCompile.cache
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\bin\Debug\Balloons.Examples.exe.config
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\bin\Debug\Balloons.Examples.exe
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\bin\Debug\Balloons.Examples.pdb
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\bin\Debug\Balloons.dll
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\bin\Debug\Balloons.pdb
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\MainWindow.baml
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\MainWindow.g.cs
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.g.resources
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.Properties.Resources.resources
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.csproj.GenerateResource.Cache
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.exe
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons.Examples\obj\Debug\Balloons.Examples.pdb

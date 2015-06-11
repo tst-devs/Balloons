@@ -1,0 +1,11 @@
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\bin\Debug\Balloons.dll
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\bin\Debug\Balloons.pdb
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons_MarkupCompile.cache
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons_MarkupCompile.lref
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Themes\Balloon.generic.baml
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons.g.resources
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons.dll
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons.pdb
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Balloons.csprojResolveAssemblyReference.cache
+C:\Users\a_vzhik\Documents\Projects\my\Balloons\Balloons\obj\Debug\Themes\Generic.baml
