@@ -17,12 +17,12 @@ namespace TST.Phoenix.Arm.Themes
 		/// <summary>
 		/// Интервал включения рендеринга коннектора после показа всплывающего элемента.
 		/// </summary>
-		private static readonly TimeSpan _DelayRenderInterval = TimeSpan.FromMilliseconds(2);
+		private static readonly TimeSpan _DelayRenderInterval = TimeSpan.FromMilliseconds(30);
 		
 		/// <summary>
 		/// Интервал проверок изменения положения всплывающего элемента.
 		/// </summary>
-		private static readonly TimeSpan _CheckPositionInterval = TimeSpan.FromMilliseconds(1);
+		private static readonly TimeSpan _CheckPositionInterval = TimeSpan.FromMilliseconds(20);
 
 		/// <summary>
 		/// Радиус скругления углов области содержимого декоратора.

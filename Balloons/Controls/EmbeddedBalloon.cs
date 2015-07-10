@@ -31,6 +31,7 @@ namespace TST.Phoenix.Arm.Controls
 			// Расчитывать положение имеет смысл, если пройдены стадии измерения и компоновки,...
 			if (!this.IsMeasureValid || !this.IsArrangeValid)
 			{
+				this.Dispatcher.BeginInvoke(new Action(() => this.ComputePosition()), System.Windows.Threading.DispatcherPriority.Render);
 				return;
 			}
 			// ... а также установлен целевой элемент.
@@ -89,8 +90,11 @@ namespace TST.Phoenix.Arm.Controls
 			{
 				// Выбираем расположение, если оно полностью помещается в 
 				// область размещение и не пересекается с областью присоединения элемента.
+				var flowRectIntersection = Rect.Intersect(placementBounds[placementIndex], this.FlowAround);
 				if (placementRectangle.Contains(placementBounds[placementIndex]) 
-					&& Rect.Intersect(placementBounds[placementIndex], this.FlowAround).IsEmpty)
+					&& (flowRectIntersection.IsEmpty 
+						|| flowRectIntersection.Width < double.Epsilon 
+						|| flowRectIntersection.Height < double.Epsilon))
 				{
 					break;
 				}
@@ -397,7 +401,7 @@ namespace TST.Phoenix.Arm.Controls
 			DependencyProperty.Register("LeftDockPriority",
 				typeof(int),
 				typeof(EmbeddedBalloon),
-				new FrameworkPropertyMetadata(1, FrameworkPropertyMetadataOptions.AffectsRender));
+				new FrameworkPropertyMetadata(1, EmbeddedBalloon.DockPriorityChanged));
 
 		#endregion
 
@@ -428,7 +432,7 @@ namespace TST.Phoenix.Arm.Controls
 			DependencyProperty.Register("TopDockPriority",
 				typeof(int),
 				typeof(EmbeddedBalloon),
-				new FrameworkPropertyMetadata(3, FrameworkPropertyMetadataOptions.AffectsRender));
+				new FrameworkPropertyMetadata(3, EmbeddedBalloon.DockPriorityChanged));
 
 		#endregion
 
@@ -459,7 +463,7 @@ namespace TST.Phoenix.Arm.Controls
 			DependencyProperty.Register("RightDockPriority",
 				typeof(int),
 				typeof(EmbeddedBalloon),
-				new FrameworkPropertyMetadata(0, FrameworkPropertyMetadataOptions.AffectsRender));
+				new FrameworkPropertyMetadata(0, EmbeddedBalloon.DockPriorityChanged));
 
 		#endregion
 
@@ -490,9 +494,20 @@ namespace TST.Phoenix.Arm.Controls
 			DependencyProperty.Register("BottomDockPriority",
 				typeof(int),
 				typeof(EmbeddedBalloon),
-				new FrameworkPropertyMetadata(2, FrameworkPropertyMetadataOptions.AffectsRender));
+				new FrameworkPropertyMetadata(2, EmbeddedBalloon.DockPriorityChanged));
 
 		#endregion
+
+		/// <summary>
+		/// Called when one of <see cref="LeftDockPriorityProperty"/>, <see cref="TopDockPriorityProperty"/>, 
+		/// <see cref="RightDockPriorityProperty"/>, <see cref="BottomDockPriorityProperty"/> changes.
+		/// </summary>
+		/// <param name="dependencyObject">Dependency object, whose property has been changed.</param>
+		/// <param name="e">Event arguments.</param>
+		private static void DockPriorityChanged(DependencyObject dependencyObject, DependencyPropertyChangedEventArgs e)
+		{
+			((EmbeddedBalloon)dependencyObject).ComputePosition();
+		}
 
 		#region FlowAround Property
 
